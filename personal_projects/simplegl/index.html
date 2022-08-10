@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>Lahav Lipson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" language="JavaScript">
+        
+        function bustImage()
+        {
+
+            var NUM_PROFILE_PICS = 6
+            var EXT = ".jpg"
+            var num = 1 + Math.floor(Math.random() * NUM_PROFILE_PICS); 
+
+            document.write( '<div class=\"col-8 col-sm-6 col-md-4 col-lg-3 pl-4 pt-4 pt-md-0\"><a onclick=\'changepic()\'><img src=\"profiles/profile_' + num + EXT + '\" itemprop=\"photo\" class=\"me float-left img-fluid\"  alt=\"image\"></a></div>' );
+        }
+    </script>
+
+    <style>
+    .publogo { margin-right : 20px; }
+    .publication { padding-left : 10px; padding-top : 10px; margin-bottom : 10px; }
+    .publication strong a { color : #000; text-decoration    :none; }
+    .publication strong a:hover { text-decoration : underline; }
+    .publication .links a { margin-right : 15px; }
+    .press { display : inline-block; padding : 5px; height : 70px;}
+    .press a img { border : 3px solid #fff; border-radius : 5px; padding : 4px; }
+    .press a img:hover { border-color : #3366cc; }
+    .talk { display : block; padding : 0 15px;}
+    .talk a img { border : 3px solid #fff; border-radius : 5px; padding : 5px; }
+    .talk a img:hover { border-color : #3366cc; }
+    .external a { margin-right : 30px; }
+    ul{ list-style:none; padding:0; margin:0; }
+    a{ color: rgb(0, 114, 206); }
+    ul li { padding-bottom:6px; }
+    .nameplate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer { background-color:rgb(240,240,240); }
+    .topbar { background-color:rgb(245,128,37); }
+    h3, h4 { color:#424242; }
+    .section-title { margin-top : 30px; }
+
+    h4 { margin-top: 30px; }
+
+    p{ text-align: justify; }
+
+    .papers-selected h4, .papers-selected h3 { display : none; }
+    .papers-selected .publication { display : none; }
+    .papers-selected .paperhi { display : flex; }
+
+    .content-indent {
+        margin-left: 20px;
+    }
+
+    .section-header {
+        color:#424242;
+        margin-top : 30px;
+    }
+
+    .subsection-header {
+        margin-top : 60px;
+    }
+
+    .proj-image {
+        margin-bottom : 10px;
+    }
+
+    #songwatermark {
+        margin-left: 35px;
+    }
+
+    #songonly {
+        margin-left: 60px;
+    }
+
+    #shadows-label {
+        text-align: center;
+    }
+
+    #resume {
+        margin-top: 10px;
+    }
+
+    .tools-used {
+        padding-bottom: 10px;
+    }
+
+    #updated {
+        font-size: 14px;
+
+    }
+
+   /* a {
+        color: #DC6E05
+        }*/
+
+        .toplink {
+            color: #000000;
+        }
+
+        .bottomlink {
+            color: #DC6E05;
+            /*color: #F58024;*/
+        }
+
+        #logo {
+            margin-bottom: -80px;
+        }
+
+
+    </style>
+
+    <link rel="shortcut icon" href="/files/assets/images/favicon.ico" />
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-1592615-30', 'auto', 'webwwwall');
+        ga('webwwwall.send', 'pageview');
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+
+            <div class="row">
+
+                <div class="col-lg-8 order-0 col-12 px-4 papers-container papers-selected">
+
+                    <div class="publication media paperhi subsection-header" id="logo">
+                        <a href="simplegl_logo.png"><img src="simplegl_logo.png" width="500" class="publogo img-fluid float-left rounded g proj-image"></a>
+                    </div>             
+                    <div class="publication media paperhi subsection-header">
+
+                        <div class="col-sm-5">
+                            <a href="screenshot.png"><img src="screenshot.png" class="publogo img-fluid float-left rounded g proj-image"></a>
+                            <a href="physics.gif"><img src="physics.gif" class="publogo img-fluid float-left rounded g proj-image"></a>
+                        </div>
+                        <div class="media-body">
+                            <div class="tools-used"><br>
+                                <span class="links">
+                                    <a href="https://github.com/Lahav174/SimpleOpenGL" target="_blank">Code and documentation</a>
+                                </span>
+
+                                </div>
+                                <u>Objective:</u> Design and develop a C++ library that enables users to create complex scenes in OpenGL using only a few lines of code. <br><br>
+
+                                <u>Method:</u> To simplify OpenGL, we leveraged object oriented programming paradigms to abstract rendering logic away from the user so that they can design scenes and manipulate objects more easily. Our library has built-in shaders for Blinn-Phong shading and for shadows, debugging tools, key-controls to navigate the 3D scene, and methods to add and manipulate objects and change the lighting. SimpleGL also leverages geometry instancing under the hood to allow users to duplicate vertices efficiently.<br><br>
+
+                                <u>Additional Info:</u> This work was done in collaboration with Yuxuan Mei and Crystal Ren as part of my C++ Design course, taught by <a target="_blank" href="http://www.stroustrup.com/">Prof. Bjarne Stroustrup</a>, creator of C++. The Github below contains documentation and demos.
+                            </p>
+                        </div>
+                    </div>        
+         </div>
+     </div>
+ </div>
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+
+</body>
+</html>
